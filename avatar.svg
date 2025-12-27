@@ -1,93 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="Chibi avatar — friendly waving character">
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="Playful robot chibi avatar">
   <defs>
-    <linearGradient id="skin" x1="0" x2="1">
-      <stop offset="0" stop-color="#ffd7b5"/>
-      <stop offset="1" stop-color="#ffc39a"/>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffefba"/>
+      <stop offset="1" stop-color="#ffffff"/>
     </linearGradient>
-    <linearGradient id="hair" x1="0" x2="1">
-      <stop offset="0" stop-color="#4b5563"/>
-      <stop offset="1" stop-color="#1f2937"/>
+    <linearGradient id="metal" x1="0" x2="1">
+      <stop offset="0" stop-color="#cfe8ff"/>
+      <stop offset="1" stop-color="#a0c4ff"/>
     </linearGradient>
-    <linearGradient id="shirt" x1="0" x2="1">
-      <stop offset="0" stop-color="#60a5fa"/>
-      <stop offset="1" stop-color="#06b6d4"/>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffd6e0"/>
+      <stop offset="1" stop-color="#ffb4c7"/>
     </linearGradient>
-    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000" flood-opacity="0.15"/>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000" flood-opacity="0.12"/>
     </filter>
   </defs>
 
-  <!-- background -->
-  <rect width="100%" height="100%" rx="40" fill="#0b1220"/>
+  <!-- Background card -->
+  <rect width="100%" height="100%" rx="36" fill="url(#bg)"/>
 
-  <!-- soft card -->
+  <!-- soft inner panel -->
   <g transform="translate(40,40)">
-    <rect width="520" height="520" rx="36" fill="#071728" opacity="0.6"/>
-    <g filter="url(#softShadow)">
-      <!-- chibi body card -->
-      <rect x="60" y="40" width="400" height="440" rx="28" fill="#071a2a" opacity="0.8"/>
-    </g>
+    <rect width="520" height="520" rx="28" fill="#071028" opacity="0.85"/>
+    <g transform="translate(40,40)">
+      <!-- shadowed panel -->
+      <rect width="440" height="440" rx="22" fill="#081a2a" opacity="0.9"/>
 
-    <!-- head -->
-    <g transform="translate(160,80)">
-      <ellipse cx="140" cy="120" rx="120" ry="110" fill="url(#skin)"/>
-      <!-- hair -->
-      <path d="M30 100 q70 -90 220 -30 q-30 -30 -160 -30 q-80 0 -90 60z" fill="url(#hair)"/>
-      <!-- bangs detail -->
-      <path d="M60 90 q50 -40 110 -32" stroke="#18202a" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.6"/>
+      <!-- robot body (chibi style) -->
+      <g transform="translate(70,40)" filter="url(#shadow)">
+        <!-- head -->
+        <rect x="90" y="20" rx="40" ry="40" width="220" height="200" fill="url(#metal)"/>
+        <!-- face screen -->
+        <rect x="120" y="60" rx="26" ry="26" width="160" height="120" fill="#061424"/>
+        <!-- eyes -->
+        <g fill="#9ee4ff">
+          <circle cx="160" cy="115" r="14"/>
+          <circle cx="240" cy="115" r="14"/>
+          <circle cx="156" cy="112" r="5" fill="#fff" />
+          <circle cx="236" cy="112" r="5" fill="#fff" />
+        </g>
+        <!-- smile (pixel-style) -->
+        <rect x="180" y="150" width="40" height="6" rx="3" fill="#79d1ff"/>
 
-      <!-- eyes -->
-      <g transform="translate(40,80)">
-        <ellipse cx="40" cy="10" rx="26" ry="32" fill="#07203b"/>
-        <ellipse cx="140" cy="10" rx="26" ry="32" fill="#07203b"/>
-        <circle cx="34" cy="2" r="6" fill="#fff" opacity="0.9"/>
-        <circle cx="134" cy="2" r="6" fill="#fff" opacity="0.9"/>
+        <!-- antenna -->
+        <g transform="translate(190,12)">
+          <rect x="-4" y="-12" width="8" height="28" rx="4" fill="#ffcfdf"/>
+          <circle cx="0" cy="-16" r="12" fill="#ff8fb4"/>
+        </g>
+
+        <!-- cheeks (cute accent) -->
+        <ellipse cx="150" cy="150" rx="10" ry="6" fill="#ffd6e0" opacity="0.9"/>
+        <ellipse cx="250" cy="150" rx="10" ry="6" fill="#ffd6e0" opacity="0.9"/>
+
+        <!-- torso -->
+        <rect x="120" y="230" rx="26" ry="26" width="160" height="140" fill="url(#accent)"/>
+        <rect x="125" y="236" rx="18" ry="18" width="150" height="36" fill="#ffffff" opacity="0.06"/>
+
+        <!-- left arm (holding phone) -->
+        <g transform="translate(80,260)">
+          <path d="M0 0 q-8 8 10 28" stroke="url(#metal)" stroke-width="24" stroke-linecap="round" fill="none"/>
+          <!-- phone -->
+          <rect x="8" y="22" width="48" height="72" rx="8" fill="#061424"/>
+          <rect x="16" y="30" width="32" height="56" rx="6" fill="#9ee4ff" opacity="0.12"/>
+        </g>
+
+        <!-- right arm (waving) -->
+        <g transform="translate(360,240)">
+          <path d="M0 0 q20 -18 50 -6" stroke="url(#metal)" stroke-width="28" stroke-linecap="round" fill="none"/>
+          <circle cx="50" cy="-6" r="18" fill="url(#metal)"/>
+        </g>
+
+        <!-- little heart / spark -->
+        <g transform="translate(320,60)">
+          <path d="M6 18 C6 -4 38 -4 38 18 C38 34 20 50 6 64 C-8 50 -26 32 6 18 Z" fill="#ff8fb4" opacity="0.95" transform="scale(0.28) translate(40,0)"/>
+        </g>
       </g>
 
-      <!-- cheeks -->
-      <ellipse cx="80" cy="150" rx="18" ry="10" fill="#ffb4a2" opacity="0.7"/>
-      <ellipse cx="200" cy="150" rx="18" ry="10" fill="#ffb4a2" opacity="0.7"/>
-
-      <!-- smile -->
-      <path d="M90 165 q50 36 90 0" stroke="#07203b" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- label -->
+      <text x="110" y="430" font-family="Segoe UI, Roboto, Arial" font-size="22" fill="#e6f7ff">Hi — I'm Deepak 👋</text>
+      <text x="110" y="458" font-family="Segoe UI, Roboto, Arial" font-size="14" fill="#9fcaf7">Playful robot-chibi Flutter dev — open to work</text>
     </g>
-
-    <!-- body & shirt -->
-    <g transform="translate(160,260)">
-      <rect x="10" y="60" rx="22" ry="22" width="260" height="170" fill="url(#shirt)"/>
-      <rect x="10" y="60" rx="22" ry="22" width="260" height="36" fill="#ffffff" opacity="0.06"/>
-      <text x="40" y="160" font-family="Segoe UI, Roboto, Arial" font-size="20" fill="#07203b">Flutter · Dart</text>
-    </g>
-
-    <!-- left arm (resting) -->
-    <g transform="translate(110,300)">
-      <path d="M0 0 q-20 40 0 80" stroke="url(#skin)" stroke-width="28" stroke-linecap="round" fill="none"/>
-      <circle cx="-6" cy="85" r="16" fill="url(#skin)"/>
-    </g>
-
-    <!-- right arm (waving) -->
-    <g id="waving-arm" transform="translate(380,260)">
-      <!-- upper arm -->
-      <path d="M0 0 q36 -8 72 6" stroke="url(#skin)" stroke-width="28" stroke-linecap="round" fill="none"/>
-      <!-- hand -->
-      <g transform="translate(72,6)">
-        <circle cx="0" cy="0" r="18" fill="url(#skin)"/>
-      </g>
-
-      <!-- sleeve overlay -->
-      <path d="M0 0 q36 -8 72 6" stroke="rgba(255,255,255,0.06)" stroke-width="28" stroke-linecap="round" fill="none"/>
-
-      <!-- waving animation (rotation around shoulder point) -->
-      <animateTransform attributeName="transform"
-                        attributeType="XML"
-                        type="rotate"
-                        values="0 0 0; 18 0 0; -12 0 0; 12 0 0; 0 0 0"
-                        dur="2.0s"
-                        repeatCount="indefinite"/>
-    </g>
-
-    <!-- small greeting text -->
-    <text x="140" y="520" font-family="Segoe UI, Roboto, Helvetica, Arial" font-size="22" fill="#e6eef8">Hi — I'm Deepak 👋</text>
-    <text x="140" y="545" font-family="Segoe UI, Roboto, Helvetica, Arial" font-size="14" fill="#9fcaf7">Playful chibi Flutter developer — open to work!</text>
   </g>
 </svg>
