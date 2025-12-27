@@ -1,10 +1,6 @@
 # Hi — I'm Deepak Mewada 👋
 Friendly · Approachable · Flutter App Developer
-
-<div align="center">
-  <!-- Use the cartoon SVG avatar saved as ./avatar.svg -->
-  ![cartoon-avatar](./avatar.svg)
-</div>
+<p align="center"> <img src="https://raw.githubusercontent.com/DeepakMewada20/DeepakMewada20/main/avatar.svg" width="220" alt="cartoon avatar" /> </p>
 
 ---
 
