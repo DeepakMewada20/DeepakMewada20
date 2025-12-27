@@ -1,16 +1,9 @@
 # Hi — I'm Deepak Mewada 👋
 Friendly · Approachable · Flutter App Developer
 
-[![Profile Views](https://komarev.com/ghpvc/?username=DeepakMewada20&color=0e75b6)](https://github.com/DeepakMewada20)
-
----
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1200&color=06b6d4&width=680&lines=I+build+joyful+Flutter+apps+%F0%9F%93%B1;Realtime+features+%F0%9F%94%A5+%7C+Video+%2B+Notifications" alt="typing" />
-</p>
-
 <div align="center">
-  <img src="https://github.com/DeepakMewada20.png" alt="profile" width="120" height="120" style="border-radius:50%" />
+  <!-- Use the cartoon SVG avatar saved as ./avatar.svg -->
+  ![cartoon-avatar](./avatar.svg)
 </div>
 
 ---
