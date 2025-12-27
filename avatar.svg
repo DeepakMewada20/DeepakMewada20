@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-label="Friendly cartoon avatar">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffd6a5"/>
+      <stop offset="1" stop-color="#ffb4a2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background circle -->
+  <rect width="100%" height="100%" rx="24" fill="#0b1220"/>
+
+  <!-- card -->
+  <g transform="translate(50,40)">
+    <rect width="300" height="320" rx="22" fill="url(#g1)" opacity="0.12"/>
+
+    <!-- head -->
+    <g transform="translate(60,40)">
+      <circle cx="90" cy="90" r="72" fill="url(#g2)"/>
+      <!-- hair -->
+      <path d="M36 78 q40 -60 108 -28 q20 10 10 32 q-24 -12 -38 -8 q-36 8 -80 12z" fill="#2b2f5a"/>
+      <!-- eyes -->
+      <g fill="#07203b">
+        <ellipse cx="64" cy="88" rx="10" ry="12"/>
+        <ellipse cx="116" cy="88" rx="10" ry="12"/>
+        <circle cx="60" cy="84" r="3" fill="#fff"/>
+        <circle cx="112" cy="84" r="3" fill="#fff"/>
+      </g>
+      <!-- smile -->
+      <path d="M64 116 q26 22 52 0" stroke="#07203b" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <!-- blush -->
+      <ellipse cx="46" cy="104" rx="8" ry="5" fill="#ffb4a2" opacity="0.6"/>
+      <ellipse cx="134" cy="104" rx="8" ry="5" fill="#ffb4a2" opacity="0.6"/>
+    </g>
+
+    <!-- body -->
+    <g transform="translate(60,190)">
+      <rect x="0" y="0" rx="14" width="180" height="90" fill="#111827"/>
+      <rect x="0" y="0" rx="14" width="180" height="26" fill="#06b6d4" opacity="0.95"/>
+      <text x="18" y="54" font-family="Segoe UI, Roboto, Helvetica, Arial" font-size="14" fill="#e6eef8">Flutter · Dart · Serverpod</text>
+    </g>
+
+    <!-- waving arm -->
+    <g transform="translate(230,150)" id="arm">
+      <path d="M0 0 q30 -12 42 6" stroke="#ffd6a5" stroke-width="18" stroke-linecap="round" fill="none"/>
+      <circle cx="42" cy="6" r="12" fill="#ffd6a5"/>
+      <animateTransform attributeName="transform"
+                        attributeType="XML"
+                        type="rotate"
+                        values="0 6 6; 18 6 6; -10 6 6; 8 6 6; 0 6 6"
+                        dur="2.4s"
+                        repeatCount="indefinite"/>
+    </g>
+
+    <!-- small greeting text -->
+    <text x="20" y="310" font-family="Segoe UI, Roboto, Helvetica, Arial" font-size="18" fill="#e6eef8">Hi — I'm Deepak 👋</text>
+    <text x="20" y="332" font-family="Segoe UI, Roboto, Helvetica, Arial" font-size="12" fill="#cfe9ff">Playful Flutter app developer — open to work!</text>
+  </g>
+</svg>
